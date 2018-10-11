@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Aish Residency - Cultural Details</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/loginstyle.css" rel="stylesheet" type="text/css">
+<script language="javascript" src="js/table.js"></script>
+
+</head>
+<body>
+<div id="wrapper"> 
+<div class="content1">
+  <h2><center>Aishwarya Residency</center></h2>
+</div>
+<hr>
+ <div class="container">
+	<section id="content">
+		<form action="login.php" name="myForm" method="post">
+			<h1>Login </h1>
+			<div>
+				<input type="text" placeholder="Username" name="usertxt" onblur="check_user()" required="required"/>
+			</div>
+			<div>
+				<input type="password" placeholder="Password" name="pwdtxt" onblur="check_pwd()" required="required"/>
+			</div>
+			<div>
+			<script>
+			
+			var mealsByCategory = {
+			C: ["Chairman","Secretary","Tresurer","Security Head", "Water Head", "Maintenance Head", "Cultural Head","Houskeeping Head"],
+			S: ["NULL"]
+}
+
+    function changecat(value) {
+        if (value.length == 0) document.getElementById("category").innerHTML = "<option></option>";
+        else {
+            var catOptions = "";
+            for (categoryId in mealsByCategory[value]) {
+                catOptions += "<option>" + mealsByCategory[value][categoryId] + "</option>";
+            }
+            document.getElementById("category").innerHTML = catOptions;
+        }
+    }
+	</script>
+	
+		<select name="usertype" id="usertype" onChange="changecat(this.value);">
+    <option value="" disabled selected>Type of user</option>
+    <option value="C">Comittee Member</option>
+    <option value="S">Society Member</option>
+	</div>
+	</select>
+<select name="category" id="category">
+    <option value="" disabled selected>Select</option>
+</select>	
+		</div>
+			<center>
+				<input type="submit" name="submit" value="Log in" />
+				<a href="#"><h4>Lost password?</h4></a>
+			<center><a href="#"><h4>New Register<h4></a></center>
+			</form><!-- form -->
+		</section><!-- content -->
+		<br>
+		<center>
+		<a href="index.html"><button class="button" style="width:100px"><b>HOME</button></b></a>
+		</center>
+</div>	
+<hr>
+</div>
+</body>
+</html>

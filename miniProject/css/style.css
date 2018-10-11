@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+
+	hr {border-bottom: 1px solid #C1C1CB;margin:5px 0;padding:0;height:2px;width:100%; margin-bottom:15px;}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+body {
+  margin: 0;
+}
+
+#wrapper {
+	width:1200px;
+	margin:0 auto;
+	padding:01px 0 10px 0;
+}
+
+/*Drop down*/
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #E6E6FA;
+    min-width: 200px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    padding: 0px 0px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}	
+/*******Slider**/
+.mySlides {
+	display:none;
+	height:550px;
+	border:#496066 solid 1px;
+}
+.slide_content{
+	padding:0px 0px;
+	margin: 0px 0px;
+}
+
+/* Style the top navigation bar */
+.navigation{
+	margin:02px 0px;
+	border-bottom:none;
+	padding:0px 0px;
+	background: #A9A9A9;
+	overflow: hidden;
+	font-size:25px;
+	height: 25px;
+}
+
+.navigation ul{
+	margin:0px;
+	padding:0px;
+}
+
+.navigation ul li{
+	margin:0px;
+	padding:0px 20px;
+	display:inline;
+	list-style-type:none;
+	border-right:none;
+}
+
+.navigation ul li a{
+	color:#03314b;
+	text-decoration:none;
+}
+
+.navigation ul li a:hover{
+	text-decoration:underline;
+}
+
+.navigation ul li:last-child {
+	border-right:none;
+}
+/* Style the content */
+.content {
+
+	
+	font-size: 45px;
+	color: #FF6347 ;
+	font-family: "Monotype Corsiva";
+    background-color: #f1f1f1;
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    height: 180px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+/*------------------*/
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 5px;
+    text-align: center;
+		font-size: 25px;
+	color: #8B008B;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.button {
+    background-color:  #32cd32;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.entries{
+
+	font-size: 32px;
+	font-family: "Angsana New";
+	color: black ;
+	letter-spacing: 1px; 
+
+}
+
+/*table sytle*/
+
+	
+table {
+    border-collapse: collapse;
+    width: 70%;
+    font-size:18px;
+    color:solid blue;
+}
+
+th, td {
+    text-align: left;
+    padding: 25px;
+    
+}
+
+p{
+font-size: 21px;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #364155;
+    color: #fff;
+    text-align: center;
+	border-radius:30px 0px 30px 0px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    right:30px;
+    font-size: 15px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}

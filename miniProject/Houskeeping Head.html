@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Aishwarya Recidency-HOUSEKEEPING</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script language="javascript" src="js/table.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</HEAD>
+
+<BODY>
+<div id="wrapper">
+<div>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+<li style="float:right"><a class="active" href="logout.php">Logout</a></li>
+</ul>
+</div>
+	<div class="content">
+		<h2><center>Aishwarya Recidency</center></h2>
+	</div>
+
+
+<center>
+	<h1 style="color:#9370DB;">HOUSEKEEPING</h1>
+	<h3 style = "color:#2F4F4F;">DEPARTMENT HEAD : SUCHITRA HIWALE</h3>
+<br><br>
+<hr>
+<a href="House Report.php"><button name="report" class="button" ><b>&nbsp;&nbsp;REPORT&nbsp;&nbsp;</button></a>
+<a href="workers_data.html"><button name="W_data" class="button" ><b>&nbsp;&nbsp;Workers Details&nbsp;&nbsp;</button></a>
+
+<hr>
+
+<div class="entries">
+<form name="myForm" method="post"  onsubmit="return validateform()" action="house.php" >  <br>
+YEAR :  <span style="padding-left:10px;"> <input type="text" placeholder="yyyy" name="year" ><br>
+Annual Budget : <input type="text" name="ybudget" placeholder="Enter the budget">
+<br>
+Monthly Budget : <input type="text" name="mbudget" placeholder="Enter the budget">
+<br><br>
+<button name="submit" class="button" input type ="submit"><b>&nbsp;&nbsp;Save&nbsp;&nbsp;</button>
+<button name="update" class="button" ><b>&nbsp;&nbsp;Update&nbsp;&nbsp;</button>
+<button name="delete" class="button" ><b>&nbsp;&nbsp;Delete&nbsp;&nbsp;</button>
+</form>
+
+</center>
+<hr>
+</div>
+<br>
+</div>
+</BODY>
+</HTML>

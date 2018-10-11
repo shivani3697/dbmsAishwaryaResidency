@@ -1,0 +1,2 @@
+members
+CREATE TABLE `society`.`members` ( `fname` VARCHAR(50) NOT NULL , `lname` VARCHAR(50) NOT NULL , `flatno` VARCHAR(10) NOT NULL , `moblie` VARCHAR(10) NOT NULL , `email` VARCHAR(30) NOT NULL , `usertype` VARCHAR(20) NOT NULL , `committee` VARCHAR(20) NOT NULL , `username` VARCHAR(20) NOT NULL , `password` VARCHAR(20) NOT NULL ) ENGINE = InnoDB;

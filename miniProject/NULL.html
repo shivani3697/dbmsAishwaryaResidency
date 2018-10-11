@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Aishwarya Recidency-HOUSEKEEPING</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/validate.js"></script>
+<script type="text/javascript" src="js/table.js"></script>
+</HEAD>
+
+
+<body>
+<div id="wrapper"> 
+<div>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+<li style="float:right"><a class="active" href="logout.php">Logout</a></li>
+</ul>
+</div>
+<div class="content">
+  <h2><center>Aishwarya Recidency</center></h2>
+</div>
+
+
+<center>
+<h1>
+  <h1 style="color:#9370DB;">MAINTENANCE &nbsp;&nbsp;PAYMENT</h1>
+ 
+   		<form action="pay.php" name="myForm" method="post">
+
+		<br><br><hr>
+		<h3>Please select the floor plan</h3><h4>
+		<input type="radio" name="flatT" value="2" checked> 2 BHK<br><br>
+		<input type="radio" name="flatT" value="3"> 3 BHK<br>	
+		<br>
+		<hr>
+		<h3><br>Please enter the amount &nbsp;&nbsp;&nbsp; <input type="text" name="Amount" placeholder="Enter amount here"></h3><br>
+		<hr><br>
+		<h3>Please enter the form of payment</h2><h4><br>
+		<INPUT TYPE=RADIO NAME="X1" VALUE="CASH" onclick="hide();"/>Cash&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <INPUT TYPE=RADIO NAME="X1" VALUE="cheque" onclick="show();"/>Cheque (Please Enter the Cheque Number below )
+		<br><br>
+        <TEXTAREA id="area" style="display: none;" NAME="data" ROWS=2 COLS=25></TEXTAREA>   
+  <br>
+   <button class="button" input type="submit" name="submit"><b>&nbsp;&nbsp;Save&nbsp;&nbsp;</button>
+
+		<hr>
+  </form>
+</div>
+</BODY>
+</HTML>

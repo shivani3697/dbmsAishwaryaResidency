@@ -1,0 +1,73 @@
+<?php
+include("Database\connection.php");
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Aish Residency - Cultural Details</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script language="javascript" src="js/table.js"></script>
+
+</head>
+<body>
+<div id="wrapper"> 
+<div>
+<ul>
+  <li><a class="active" href="Chairman.html">Home</a></li>
+  <li><a href="House Report.php">Housekeeping</a></li>
+  <li><a href="Water Report.php">Water</a></li>
+  <li><a href="Security Report.php">Security</a></li>
+  <li><a href="Maintance Report.php">Maintenance</a></li>
+  <li><a href="Cultural Report.php">Cultural</a></li>
+  <li><a href="Workers details.php">Workers</a></li>
+<li style="float:right"><a class="active" href="">Logout</a></li>
+</ul>
+</div>
+<div class="content">
+  <h2><center>Aishwarya Residency</center></h2>
+</div>
+<hr>
+<div id="snackbar">
+	<h3>Welcome Chairman</h3>
+	</div>
+<br>
+<center>
+
+<h1>Reports</h1></center>
+<br><hr>
+
+
+<table style="width:100%">
+  <tr>
+    <th></th>
+    <th></th> 
+  </tr>
+  <tr>
+    <td><a href="Cultural Report.php"><h2>CULTURAL DEPARTMENT</h2></a></td>
+    <td><a href="Cultural Report.php"><img src="images/cultural-diversity.jpg" alt="Holi" width="300" height="200"></a></td>
+  </tr>
+  <tr>
+    <td><a href="Maintance Report.php"><h2>MAINTENANCE DEPARTMENT</h2></a></td>
+    <td><a href="Maintance Report.php"><img src="images/repairs-and-maintenance.jpg" alt="Holi" width="300" height="200"></a></td>
+  </tr>
+  <tr>
+    <td><a href="Water Report.php"><h2>WATER DEPARTMENT</h2></a></td>
+    <td><a href="Water Report.php"><img src="images/images (1).jpg" alt="Holi" width="300" height="200"></a></td>
+  </tr>
+  <tr>
+    <td><a href="House Report.php"><h2>HOUSEKEEPING DEPARTMENT</h2></a></td>
+    <td><a href="House Report.php"><img src="images/house.png" alt="Holi" width="300" height="200"></a></td>
+  </tr>
+  <tr>
+    <td><a href="Security Report.php"><h2>SECURITY DEPARTMENT</h2></a></td>
+    <td><a href="Security Report.php"><img src="images/images.png" alt="Holi" width="300" height="200"></a></td>
+  </tr>
+</table>
+
+<script language="javascript" src="js/sliders.js"></script>
+</div>
+</body>
+</html>

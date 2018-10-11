@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Aishwarya Recidency-MAINTENANCE</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript">
+
+function validateform(){  
+var ybudget=document.myform.ybudget.value;  
+var mbudget=document.myform.mbudget.value;  
+  
+if (ybudget==null || ybudget==""){  
+  alert("Budget can't be blank");  
+  return false;  
+}else if(mbudget==null || ,mbudget==""){
+  alert("Budget can't be blank");  
+  return false;  
+  }  
+}  
+
+
+</script>
+
+</head>
+<body>
+<div id="wrapper"> 
+<div>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+<li style="float:right"><a class="active" href="logout.php">Logout</a></li>
+</ul>
+</div>
+<div class="content">
+  <h2><center>Aishwarya Recidency</center></h2>
+  
+</div>
+
+
+<center>
+<h1>
+  <p style="color:#9370DB;">MAINTENANCE</p></h1>
+<h3>
+<p style = "color:#2F4F4F;">DEPARTMENT HEAD : KALPANA KANKARIA</p></h3>
+<br><br>
+<hr>		
+<div id="snackbar">
+	<h3>Welcome to Maintance Department</h3>
+	</div>
+<a href="Maintance Report.php"><button name="report" class="button" ><b>&nbsp;&nbsp;REPORT&nbsp;&nbsp;</button></a>
+
+<hr>
+<div class="entries">
+<form name="myform" method="post"   action="maintan.php" >   <br>
+YEAR :  <span style="padding-left:10px;"> <input type="text" name="year_main"  placeholder="yyyy">
+
+Annual Budget :  <span style="padding-left:10px;"> <input type="text" name="ybudget" placeholder="Enter the budget">
+
+<br><br>
+
+
+<hr>
+</div>
+
+<div class="entries">
+<p><span style="padding-left:310px;"><b>	Service-Date <span style="padding-left:80px;">	       Due-Date	<span style="padding-left:110px;">			Amount</b>
+
+<br>Elevator&nbsp;&nbsp;<input type="date" placeholder = "DD/MM/YYY" name= "sdate_elev" />
+&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp	
+<input type="date" placeholder = "DD/MM/YYY" name= "ddate_elev"/>
+&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp	 
+<input type="text"  placeholder="Enter amount" name= "amt_ele"/> 
+
+
+<br>Swimming Pool&nbsp;&nbsp;<input type="date" placeholder = "DD/MM/YYY" name= "sdate_swim"/>
+&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp 
+<input type="date" placeholder = "DD/MM/YYY" name= "ddate_swim"/>
+&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;
+<input type="text"  placeholder="Enter amount" name= "amt_swim"/> 
+
+<br>Gymnasium&nbsp;&nbsp;<input type="date" placeholder = "DD/MM/YYY" name= "sdate_gym"/>
+&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp	
+<input type="date" placeholder = "DD/MM/YYY" name= "ddate_gym"/>
+&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp	
+ <input type="text"  placeholder="Enter amount" name= "amt_gym"/> 
+
+ 
+<br>Garden&nbsp;&nbsp; <input type="date" value = "DD/MM/YYY" name= "sdate_garden"/>
+&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp
+<input type="date" placeholder = "DD/MM/YYY" name= "ddate_garden"/>
+&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp	
+<input type="text"  placeholder="Enter amount" name= "amt_garden"/> <br>
+<button name="submit" class="button" input type ="submit"><b>&nbsp;&nbsp;Save&nbsp;&nbsp;</button>
+<button name="update" class="button" ><b>&nbsp;&nbsp;Update&nbsp;&nbsp;</button>
+<button name="delete" class="button" ><b>&nbsp;&nbsp;Delete&nbsp;&nbsp;</button>
+</form>
+<hr>
+
+
+</center>
+</div>
+</div>
+</body>
+</html>

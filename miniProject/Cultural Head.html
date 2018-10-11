@@ -1,0 +1,104 @@
+<?php
+include("Database\connection.php");
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Aish Residency - Cultural Details</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script language="javascript" src="js/table.js"></script>
+<script language="javascript" src="js/validation.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body onload="myFunction()">
+<div id="wrapper"> 
+<div>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+<li style="float:right"><a class="active" href="logout.php">Logout</a></li>
+</ul>
+</div>
+<div class="content">
+  <h2><center>Aishwarya Residency</center></h2>
+</div>
+<center>
+  <h1 style="color:#9370DB;">CULTURAL ACTIVITIES</h1>
+<div id="snackbar">
+	<h3>Welcome to Cultural Department</h3>
+	</div>
+<br>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Holi-2.jpg">  
+	<img src="images/Holi-2.jpg" alt="Holi" width="300" height="200">
+    </a>
+    <div class="desc">Holi</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/IMG-20170905-WA0000.jpg">
+      <img src="images/IMG-20170905-WA0000.jpg" alt="Ganapati" width="600" height="400">
+    </a>
+    <div class="desc">Ganesh Chaturthi</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/navratri-1.jpg">
+      <img src="images/navratri-1.jpg" alt="Navratri" width="600" height="400">
+    </a>
+    <div class="desc">Navratri</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/christmas.jpg">
+      <img src="images/christmas.jpg" alt="Christmas" width="600" height="400">
+    </a>
+    <div class="desc">Christmas</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+</div>
+
+<br><br>
+
+<h3>
+<p style = "color:#2F4F4F;"> Department Head: NILKANTH CHOPADE</p></h3><br><br>
+<a href="Cultural Report.php"><button name="report" class="button" ><b>&nbsp;&nbsp;REPORT&nbsp;&nbsp;</button></a>
+
+<hr>
+<div class="entries">
+<form  name="myForm" action="Cultural.php" method="post">
+YEAR :  <span style="padding-left:10px;"> <input type="text" placeholder="yyyy" name="year" >
+Annual Budget : <input type="text" name="Annual_Budget" placeholder="Enter the budget">
+</center>
+<br>
+<hr>
+</div>
+<center>
+<p><b><span style="padding-left:100px;">	Festival <span style="padding-left:150px;">	     Budget<br>
+	
+<INPUT type="text" name="Ftxt" placeholder="Festival">&nbsp;&nbsp;&nbsp;&nbsp;
+			<INPUT type="text" name="F_budget"placeholder="Budget"><br>
+			<br><br>
+			<button name="submit" class="button" input type ="submit"><b>&nbsp;&nbsp;Save&nbsp;&nbsp;</button>
+		<button name="update" class="button" ><b>&nbsp;&nbsp;Update&nbsp;&nbsp;</button>
+<button name="delete" class="button" ><b>&nbsp;&nbsp;Delete&nbsp;&nbsp;</button>
+</center>
+</form>
+<br><br>
+</div>
+</body>
+</html>

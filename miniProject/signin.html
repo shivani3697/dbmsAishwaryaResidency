@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Aish Residency - Cultural Details</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/loginstyle.css" rel="stylesheet" type="text/css">
+<script language="javascript" src="js/validation.js"></script>
+
+</head>
+<body>
+<div id="wrapper"> 
+<div>
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+</ul>
+</div>
+<div class="content1">
+  <h2><center>Aishwarya Residency</center></h2>
+</div>
+<hr>
+ <div class="container">
+	<section id="content">
+		<form action="signin.php" name="myForm" method="post">
+			<h1>Sign Up </h1>
+			<div>
+				<input type="text" placeholder="First Name" required="" name="fnametxt"  onblur="first_name()"/>
+			</div>
+			<div>
+				<input type="text" placeholder="Last name" required="" name="lnametxt" onblur="last_name()"/>
+			</div>
+			<div>
+				<input type="text" placeholder="Flat No." required="" name="flatno" />
+			</div>
+			<div>
+				<input type="text" placeholder="Moblie No." required="" name="phonetxt" onblur="check_mno()" />
+			</div>
+			<div>
+				<input type="text" placeholder="E-mail address" required="" name="emailtxt"  onblur="check_mail()" />
+			</div>
+			<div>
+			<script>
+			
+			var mealsByCategory = {
+			C: ["Chairman","Secretary","Tresurer","Security Head", "Water Head", "Maintenance Head", "Cultural Head","Houskeeping Head"],
+			S: ["NULL"]
+}
+
+    function changecat(value) {
+        if (value.length == 0) document.getElementById("category").innerHTML = "<option></option>";
+        else {
+            var catOptions = "";
+            for (categoryId in mealsByCategory[value]) {
+                catOptions += "<option>" + mealsByCategory[value][categoryId] + "</option>";
+            }
+            document.getElementById("category").innerHTML = catOptions;
+        }
+    }
+	</script>
+	
+		<select name="usertype" id="usertype" onChange="changecat(this.value);">
+    <option value="" disabled selected>Type of user</option>
+    <option value="C">Comittee Member</option>
+    <option value="S">Society Member</option>
+	</div>
+	</select>
+<select name="category" id="category">
+    <option value="" disabled selected>Select</option>
+</select>	
+		</div>	
+			
+			<div>
+				<input type="text" placeholder="Username" required="" name="usertxt" onblur="check_user()" />
+			</div>
+			<div>
+				<input type="password" placeholder="Password" required="" name="pwdtxt" onblur="check_pwd()"/> 
+			</div>
+			<center>
+				<input type="submit" name="submit" value="Sign Up"/></center>
+			</form><!-- form -->
+		</section><!-- content -->
+		<br>
+		<center>
+		<a href="index.html"><button class="button" style="width:100px"><b>HOME</button></b></a>
+		</center>
+</div>	
+<hr>
+</div>
+</body>
+</html>
